@@ -1,0 +1,98 @@
+body {
+  background-color: #f4f4f9;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app-bar {
+  background-color: #3f51b5;
+  color: #ffffff;
+}
+
+.kanban-board {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.column {
+  background-color: #ffffff;
+  border: 2px dashed #3f51b5;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  min-height: 80vh;
+  transition: all 0.3s ease;
+}
+
+.column-todo {
+  border-color: #ff5722;
+}
+
+.column-inProgress {
+  border-color: #03a9f4;
+}
+
+.column-peerReview {
+  border-color: #8bc34a;
+}
+
+.column-done {
+  border-color: #9c27b0;
+}
+
+.column:hover {
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.task-card {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.task-card-todo {
+  border-left: 4px solid #ff5722;
+}
+
+.task-card-inProgress {
+  border-left: 4px solid #03a9f4;
+}
+
+.task-card-peerReview {
+  border-left: 4px solid #8bc34a;
+}
+
+.task-card-done {
+  border-left: 4px solid #9c27b0;
+}
+
+.task-card:hover {
+  background-color: #e0e0e0;
+}
+
+.task-card-title {
+  font-weight: bold;
+}
+
+.task-card-description {
+  font-size: 0.9rem;
+  color: #666666;
+}
+
+.edit-button,
+.delete-button {
+  color: #3f51b5;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  color: #303f9f;
+}
+
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
